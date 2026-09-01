@@ -1,0 +1,51 @@
+*{
+    background-color: 	#a876e6
+}
+
+.fotomonica{
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    objetc-fit: cover;
+    border-radius: 50%;
+}
+
+.fotorachel{
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    position: absolute;
+    top: 50px;
+    left: 360px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    objetc-fit: cover;
+    border-radius: 50%;
+}
+
+.fotophoebe{
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    position: absolute;
+    top: 50px;
+    left: 720px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    objetc-fit: cover;
+    border-radius: 50%;
+}
