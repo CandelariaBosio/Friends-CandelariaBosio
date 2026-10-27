@@ -9,7 +9,7 @@ header {
     top: 0;
 }
 
-/* Style the navigation menu */
+/* Menú hamburguesa */
 .topnav {
   overflow: clip;
   background-color: #b26ad3;
@@ -17,12 +17,11 @@ header {
   top: 0;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
+/* esconder los links del menú (excepo el de inicio) */
 .topnav #myLinks {
   display: none;
 }
 
-/* Style navigation menu links */
 .topnav a {
   color: white;
   padding: 14px 16px;
@@ -33,7 +32,6 @@ header {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Style the hamburger menu */
 .topnav a.icon {
   background: #b26ad3;
   display: block;
@@ -42,23 +40,18 @@ header {
   top: 0;
 }
 
-/* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #8e59a7;
+  color: #FFFFFF;
 }
 
-/* Style the active link (or home/logo) */
 .active {
   background-color: #b26ad3;
   color: white;
 }
 
-.tuffy-bold {
-  font-family: "Tuffy", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+
+/* SECCION INICIO */
 
 h1{
     font-size: 80px;
@@ -70,6 +63,7 @@ h1{
     text-align: center;
 }
 
+/*primer renglón de fotos*/
 .seccion1{
     display: flex;
     justify-content: space-between;
@@ -78,6 +72,7 @@ h1{
     margin-right: 30px;
 }
 
+/*segundo renglón de fotos*/
 .seccion2{
     display: flex;
     justify-content: space-between;
@@ -86,6 +81,7 @@ h1{
     margin-right: 30px;
 }
 
+/*tercer renglón de fotos*/
 .seccion3{
     display: flex;
     align-items: center;
@@ -114,7 +110,7 @@ h1{
 .fotomonica:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease;
-    border-color: #941c1c;
+    border-color: #993333;
     }
 
 .fotorachel{
@@ -123,7 +119,7 @@ h1{
     margin-top: 10px;
     border-style: solid;
     border-width: 2px;
-    border-color: #FFFFFF;
+    border-color: #f0ebe5;
     position: static;
     top: 30px;
     left: 360px;
@@ -158,7 +154,7 @@ h1{
 .fotophoebe:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease;
-    border-color: #6daf76;
+    border-color: #8faf8b;
 }
 
 .fotochandler{
@@ -180,7 +176,7 @@ h1{
 .fotochandler:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease;
-    border-color:#ee8f22;
+    border-color:#c87447;
 }
 
 .fotoross{
@@ -202,7 +198,7 @@ h1{
 .fotoross:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease;
-    border-color:#250d68;
+    border-color:#1c315e;
 }
 
 .fotojoey{
@@ -224,7 +220,7 @@ h1{
 .fotojoey:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease;
-    border-color:#f1be14;
+    border-color:#d89b38;
 }
 
 footer {
@@ -249,6 +245,9 @@ footer {
     color: #ffffff;
 }
 
+
+
+
 /* SECCION MONICA */
 
 .seccion-monica {
@@ -258,7 +257,7 @@ footer {
 
 .titulomonica{
     font-family: 'Handlee', cursive;
-    font-size: 60px;
+    font-size: 70px;
     color: #FFFFFF;}
 
 .perfil-container {
@@ -277,13 +276,13 @@ footer {
 .filtros-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
     margin: 30px 0;
 }
 
 .filtro-select {
-    padding: 10px 15px;
+    padding: 12px 15px;
     font-size: 18px;
     border-radius: 8px;
     border: none;
@@ -293,6 +292,9 @@ footer {
     font-family: 'Kedebideri', sans-serif;
     font-weight: 700;
     text-align: justify;
+}
+.filtro-select:hover{
+    transform: scale(1.05);
 }
 
 .filtro-select option {
@@ -304,7 +306,6 @@ footer {
     text-align: justify;
 }
 
-/* Grilla de recetas usando Flexbox */
 .recetas-grid {
     display: flex;
     flex-wrap: wrap;
@@ -358,7 +359,8 @@ footer {
 .btn-receta:hover {
     background-color: #934ab5;
     color: #ffffff;
-}
+    transform: scale(1.1);
+} 
 
 /* Estilos para la expansión de la tarjeta */
 .detalle-receta {
@@ -399,23 +401,23 @@ footer {
 
 }
 
-/* Transición para la tarjeta */
 .tarjeta-receta {
     transition: all 0.3s ease;
 }
 
 .tarjeta-receta.activa {
-    width: 380px; /* Se amplía el ancho de la tarjeta */
+    width: 380px; /
 }
 
 .tarjeta-receta.activa .detalle-receta {
-    display: block; /* Muestra los ingredientes y preparación */
+    display: block; /* Muestra ingredientes y preparación */
 }
 
 .btn-receta {
     cursor: pointer;
     border: none;
 }
+
 
 
 /* SECCION RACHEL */
@@ -426,7 +428,7 @@ footer {
 }
 
 .titulorachel{
-    font-size: 60px;
+    font-size: 70px;
     color: #000000;
     font-family: 'cormorant garamond';
     font-weight: 700;
@@ -438,6 +440,7 @@ footer {
     justify-content: center;
     margin-top: 20px;
 }
+
 .foto-perfil-seccion {
     width: 150px;
     height: 150px;
@@ -455,8 +458,8 @@ footer {
 }
 
 .filtro-select-rachel {
-    padding: 10px 15px;
-    font-size: 18px;
+    padding: 12px 15px;
+    font-size: 20px;
     border-radius: 8px;
     border: none;
     background-color: #000000;
@@ -466,11 +469,14 @@ footer {
     font-weight: 600;
     text-align: justify;
 }
+.filtro-select-rachel:hover{
+transform: scale(1.05);
+}
 
 .filtro-select-rachel option {
     font-family: 'Cormorant Garamond';
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     color: #f0ebe5;
     background-color: #000000;
     text-align: justify;
@@ -570,7 +576,6 @@ footer {
     font-weight:500;
 }
 
-/* Botón de reservar */
 .btn-reservar {
     background-color: #b26ad3;
     color: #ffffff;
@@ -585,6 +590,7 @@ footer {
 
 .btn-reservar:hover {
     background-color: #934ab5;
+    transform: scale(1.1);
 }
 
 
@@ -712,14 +718,14 @@ footer {
 
 .btn-leer:hover {
     background-color: #934ab5;
+    transform: scale(1.1);
 }
 
 
 /* SECCION JOEY */
 .seccion-joey {
     padding: 20px 40px;
-    background-color: #d89b38; /* Tono cálido acorde al diseño */
-}
+    background-color: #d89b38;
 
 .titulojoey {
     font-size: 70px;
@@ -730,7 +736,6 @@ footer {
     margin: 20px 0 30px 0;
 }
 
-/* Grilla de series de Joey */
 .series-grid {
     display: flex;
     flex-wrap: wrap;
@@ -769,7 +774,6 @@ footer {
     flex-grow: 1; /* Mantiene alineados los botones abajo */
 }
 
-/* Botón "Ver" */
 .btn-ver {
     background-color: #b26ad3;
     color: #ffffff;
@@ -785,4 +789,7 @@ footer {
 
 .btn-ver:hover {
     background-color: #934ab5;
+    transform: scale(1.1);
+
+}
 }
