@@ -1,10 +1,3 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 45px;
-    color: #FFFFFF;
-}
-
 body{   
 background-image: url('./imgs/FotoFondo.jpg');
 margin: 0;
@@ -37,6 +30,7 @@ header {
   font-size: 17px;
   display: block;
   text-align: left;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Style the hamburger menu */
@@ -67,12 +61,13 @@ header {
 }
 
 h1{
-    font-size: 75px;
-    font-family: "Tuffy bold", sans-serif;
+    font-size: 80px;
+    font-family: "Montserrat", sans-serif;
     color: #FFFFFF;
     margin-top: 10px;
     margin-bottom: 0px;
     width: 100%;
+    text-align: center;
 }
 
 .seccion1{
@@ -119,8 +114,8 @@ h1{
 .fotomonica:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease;
-}
-
+    border-color: #941c1c;
+    }
 
 .fotorachel{
     height: 200px;
@@ -141,6 +136,7 @@ h1{
 .fotorachel:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease;
+    border-color:#e0e4bd
 }
 
 .fotophoebe{
@@ -162,6 +158,7 @@ h1{
 .fotophoebe:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease;
+    border-color: #6daf76;
 }
 
 .fotochandler{
@@ -183,6 +180,7 @@ h1{
 .fotochandler:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease;
+    border-color:#ee8f22;
 }
 
 .fotoross{
@@ -204,6 +202,7 @@ h1{
 .fotoross:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease;
+    border-color:#250d68;
 }
 
 .fotojoey{
@@ -225,6 +224,7 @@ h1{
 .fotojoey:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease;
+    border-color:#f1be14;
 }
 
 footer {
@@ -237,9 +237,552 @@ footer {
     width: 100%;
 }
 
-.copyright {
-    font-size: 14px;
-    color: white;
+.logofooter{
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+::selection{
+    background-color: #b26ad3;
+    color: #ffffff;
+}
+
+/* SECCION MONICA */
+
+.seccion-monica {
+    padding: 20px 40px;
+    background-color: #993333;
+}
+
+.titulomonica{
+    font-family: 'Handlee', cursive;
+    font-size: 60px;
+    color: #FFFFFF;}
+
+.perfil-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.foto-perfil-seccion {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #FFFFFF;
+}
+
+.filtros-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.filtro-select {
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffdfd9;
+    color: #993333;
+    cursor: pointer;
+    font-family: 'Kedebideri', sans-serif;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.filtro-select option {
+    font-family: 'Kedebideri', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #993333;
+    background-color: #ffdfd9;
+    text-align: justify;
+}
+
+/* Grilla de recetas usando Flexbox */
+.recetas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Tarjeta individual de cada receta */
+.tarjeta-receta {
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 280px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-top: 10px;
+}
+
+.tarjeta-receta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-receta h3 {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Mantiene alineados los botones */
+    font-family: 'Handlee';
+    font-weight: 700;
+}
+
+.btn-receta {
+    background-color: #b26ad3;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Kedebideri', sans-serif;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn-receta:hover {
+    background-color: #934ab5;
+    color: #ffffff;
+}
+
+/* Estilos para la expansión de la tarjeta */
+.detalle-receta {
+    display: none;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #000000;
+}
+
+.detalle-receta h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #993333;
+    font-family: 'Handlee', cursive;
+}
+
+.detalle-receta ul {
+    font-size: 14px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.detalle-receta ul li {
+    font-size: 17px;
+    color: #000000;
+    text-align: justify;
+    font-family: 'Handlee', cursive;
+}
+
+.detalle-receta p {
+    font-size: 17px;
+    color: #000000;
+    line-height: 1.4;
+    text-align: justify;
+    font-family: 'Handlee', cursive;
+
+}
+
+/* Transición para la tarjeta */
+.tarjeta-receta {
+    transition: all 0.3s ease;
+}
+
+.tarjeta-receta.activa {
+    width: 380px; /* Se amplía el ancho de la tarjeta */
+}
+
+.tarjeta-receta.activa .detalle-receta {
+    display: block; /* Muestra los ingredientes y preparación */
+}
+
+.btn-receta {
+    cursor: pointer;
+    border: none;
+}
+
+
+/* SECCION RACHEL */
+
+.seccion-rachel {
+    padding: 20px 40px;
+    background-color: #f0ebe5;
+}
+
+.titulorachel{
+    font-size: 60px;
+    color: #000000;
+    font-family: 'cormorant garamond';
+    font-weight: 700;
+
+}
+
+.perfil-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.foto-perfil-seccion {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #FFFFFF;
+}
+
+.filtros-container-rachel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.filtro-select-rachel {
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background-color: #000000;
+    color: #f0ebe5;
+    cursor: pointer;
+    font-family: 'Cormorant Garamond';
+    font-weight: 600;
+    text-align: justify;
+}
+
+.filtro-select-rachel option {
+    font-family: 'Cormorant Garamond';
+    font-weight: 600;
+    font-size: 18px;
+    color: #f0ebe5;
+    background-color: #000000;
+    text-align: justify;
+}
+
+/* Grilla de Outfits de Rachel */
+.outfits-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+/* Tarjeta individual de cada outfit (solo muestra la foto como pediste) */
+.tarjeta-outfit {
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 220px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta-outfit img {
+    width: 100%;
+    aspect-ratio: 9 / 16; 
+    object-fit: cover;   
+    border-radius: 8px;
+}
+
+
+
+/* SECCION PHOEBE */
+
+.seccion-phoebe {
+    padding: 20px 40px;
+    background-color: #8faf8b;
+}
+
+.titulophoebe{
+    font-size: 60px;
+    color: #FFFFFF;
+    font-family: 'Bellota';
+    font-weight: 700;
+}
+
+/* Grilla de servicios de Phoebe */
+.servicios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* Tarjeta individual */
+.tarjeta-servicio {
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tarjeta-servicio img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-servicio h3 {
+    font-size: 22px;
+    color: #103817;
+    margin-bottom: 10px;
+    font-family: "Bellota", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.tarjeta-servicio p {
+    font-size: 15px;
+    color: #000000;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    font-family: 'Montserrat';
+    font-weight:500;
+}
+
+/* Botón de reservar */
+.btn-reservar {
+    background-color: #b26ad3;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reservar:hover {
+    background-color: #934ab5;
+}
+
+
+/* SECCION CHANDLER */
+
+.seccion-chandler {
+    padding: 20px 40px;
+    background-color: #c87447;
+}
+
+.titulochandler{
+    font-size: 60px;
+    color: #FFFFFF;
+    font-family: 'Courier Prime';
+    font-weight: 700;
+}
+
+/* Grilla de frases de Chandler */
+.frases-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+/* Tarjeta individual de cada frase */
+.tarjeta-frase {
+    background-color: #dbad71; /* Tono grisáceo claro como en tu captura */
+    border-radius: 16px;
+    width: 280px;
+    min-height: 140px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    text-align: left;
+    transition: transform 0.3s ease; /* Transición suave para el zoom */
+}
+
+/* Animación de zoom leve al pasar el mouse (hover) */
+.tarjeta-frase:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta-frase p {
+    font-size: 16px;
+    color: #000000;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.4;
+    margin: 0;
+}
+
+
+/* SECCION ROSS */
+
+.seccion-ross {
+    padding: 20px 40px;
+    background-color: #1c315e;
+}
+
+.tituloross {
+    font-size: 70px;
+    color: #FFFFFF;
+    font-family: 'Sansation', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+.articulos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.tarjeta-articulo {
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 240px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tarjeta-articulo img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-articulo h3 {
+    font-size: 16px;
+    color: #333333;
+    font-family: 'Sansation', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Mantiene los botones alineados abajo */
+}
+
+.btn-leer {
+    background-color: #b26ad3;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Sansation', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    transition: background-color 0.3s ease;
+}
+
+.btn-leer:hover {
+    background-color: #934ab5;
+}
+
+
+/* SECCION JOEY */
+.seccion-joey {
+    padding: 20px 40px;
+    background-color: #d89b38; /* Tono cálido acorde al diseño */
+}
+
+.titulojoey {
+    font-size: 70px;
+    color: #FFFFFF;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+/* Grilla de series de Joey */
+.series-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+/* Tarjeta individual de cada serie/película */
+.tarjeta-serie {
+    background-color: #fcdc84;
+    border-radius: 12px;
+    width: 260px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tarjeta-serie img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-serie h3 {
+    font-size: 18px;
+    color: #000000;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Mantiene alineados los botones abajo */
+}
+
+/* Botón "Ver" */
+.btn-ver {
+    background-color: #b26ad3;
+    color: #ffffff;
+    padding: 8px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: regular;
+    font-family: 'Space Mono', monospace;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ver:hover {
+    background-color: #934ab5;
 }
