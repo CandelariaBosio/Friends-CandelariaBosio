@@ -1,3 +1,71 @@
+.series-grid, .recetas-grid, .outfits-grid, .servicios-grid, .frases-grid, .articulos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 32px !important;
+    }
+
+    .tarjeta-serie, .tarjeta-outfit, .tarjeta-servicio, .tarjeta-frase, .tarjeta-articulo {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .topnav {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .seccion1 {
+        display: block;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+        .seccion2 {
+        display: block;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+        .seccion3 {
+        display: block;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+.inicio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.inicio-container img {
+    display: block;
+    margin: 0 auto;       
+    max-width: 100%;
+    height: auto;
+}
+
 body{   
 background-image: url('./imgs/FotoFondo.jpg');
 margin: 0;
